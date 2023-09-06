@@ -1,0 +1,10 @@
+vocab:
+    caption_path: 'c:/Users/anagh/Documents/myProject/show_attend_and_tell_pytorch/data/annotations/captions_train2014.json'
+    vocab_path: './CocoBase/data/vocab.pkl'
+    imageCapDict_path: './CocoBase/data/imageCapDict.pkl'
+    ids_path: './CocoBase/data/ids.pkl'
+    threshold: 4
+
+image: 
+    folder: 'C:/Users/anagh/Documents/myProject/show_attend_and_tell_pytorch/data/val2014'
+    resized_folder: './CocoBase/data/images/val2014_resized/'

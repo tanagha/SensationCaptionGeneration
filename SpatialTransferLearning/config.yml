@@ -1,0 +1,27 @@
+data_name: 'traffic' # type=str, default='coco')
+model_path: 'SpatialTransferLearning/models/' # type=str , help='path for saving trained models'
+crop_size: 224 #type=int, default=224 , help='size for randomly cropping images'
+vocab_path: 'SpatialTransferLearning/data/updatedVocab.pkl' #type=str, help='path for vocabulary wrapper'
+image_dir: 'SpatialTransferLearning/data/resized/' #type=str, help='directory for resized images'
+caption_path: 'SpatialTransferLearning/data/captions.csv' #type=str, help='path for train annotation json file'
+log_step: 50  #type=int,  help='step size for printing log info'
+save_step: 1000 #type=int , help='step size for saving trained models'
+
+# Model parameters
+embed_dim: 512 #type=int , default=512, help='dimension of word embedding vectors'
+attention_dim: 512 #type=int , default=512, help='dimension of attention linear layers'
+decoder_dim: 512 #type=int , default=512, help='dimension of decoder rnn'
+dropout: 0.5 #type=float , default=0.5
+start_epoch: 0 #type=int, default=0
+epochs: 5 #type=int, default=2
+epochs_since_improvement: 0 #type=int, default=0
+batch_size: 5 #type=int, default=5
+num_workers: 1 #type=int, default=1
+encoder_lr: 0.0001 #type=float, default=1e-4
+decoder_lr: 0.0004 #type=float, default=4e-4
+checkpoint:    #type=str, default= leave blank if no checkpoint, help='path for checkpoints' 'SpatialTransferLearning/models/BEST_checkpoint_coco.pth.tar'
+transfer_learning: False
+grad_clip: 5.0  #type=float, default=5.
+alpha_c: 1.0 #type=float, default=1.
+best_bleu4: 0.0 #type=float, default=0.
+fine_tune_encoder: False #type=bool, default='False' , help='fine-tune encoder'

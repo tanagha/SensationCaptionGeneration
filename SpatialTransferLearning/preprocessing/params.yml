@@ -1,0 +1,8 @@
+vocab:
+    vocab_path: 'SpatialTransferLearning/data/vocab.pkl'
+    threshold: 4
+    updated_vocab_path: 'SpatialTransferLearning/data/updatedVocab.pkl'
+image: 
+    data_path: 'SpatialTransferLearning/data/captions.csv'
+    folder: 'SpatialTransferLearning/data/'
+    resized_folder: 'SpatialTransferLearning/data/resized'
